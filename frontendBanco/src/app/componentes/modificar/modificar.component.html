@@ -1,0 +1,15 @@
+<form class="container form-group">
+  <div class="row">
+    <div class="col">
+      <label class="form-label">Nome</label>
+      <input [(ngModel)] ="transferencia.nome_cliente" class="form-control" name="nome_cliente" type="text" placeholder="Digite aqui o nome do titular da conta de destino">
+      <label class="form-label">Valor</label>
+      <input [(ngModel)] ="transferencia.valor" class="form-control" name="valor" type="text" placeholder="Digite aqui o valor">
+      <label class="form-label">Número da conta</label>
+      <input [(ngModel)] ="transferencia.conta_cliente" class="form-control" name="conta_cliente" type="text" placeholder="Digite aqui o número da conta">
+      <button (click)="modificar()" class="btn btn-primary mt-4">Editar</button>
+    </div>
+  </div>
+
+</form>
+

@@ -1,0 +1,23 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Conta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let resposta of listarTransferencia">
+
+        <td>{{resposta.id_transferencia}}</td>
+        <td>{{resposta.nome_cliente}}</td>
+        <td>{{resposta.valor}}</td>
+        <td>{{resposta.conta_cliente}}</td>
+        <td>
+          <button (click)="editar(resposta.id_transferencia)"  class="btn btn-primary">Editar</button>
+          <button (click)="excluir(resposta.id_transferencia)" class="btn btn-danger mx-3">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
